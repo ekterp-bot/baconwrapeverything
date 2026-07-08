@@ -5,7 +5,7 @@ import { Hero } from '../components/Hero'
 import { Leaderboard } from '../components/Leaderboard'
 import { SocialsSection } from '../components/SocialsSection'
 import { episodes } from '../data/episodes'
-import { viewerSuggestions } from '../data/siteData'
+import { socialLinks, viewerSuggestions } from '../data/siteData'
 
 export function HomePage() {
   const latestEpisodes = episodes.slice(0, 4)
@@ -13,6 +13,7 @@ export function HomePage() {
   return (
     <>
       <Hero />
+      <HomeCtaStrip />
 
       <section id="episodes" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -68,6 +69,47 @@ export function HomePage() {
       <SocialsSection />
       <WaitlistTeaser />
     </>
+  )
+}
+
+function HomeCtaStrip() {
+  return (
+    <section className="border-b border-white/10 bg-black/65">
+      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">
+            Launch Board
+          </p>
+          <p className="mt-1 text-sm font-bold text-stone-300">
+            Watch the experiments, suggest the next one, and follow the chaos when
+            the socials go live.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <a
+            href="/episodes"
+            className="rounded-md bg-red-600 px-4 py-2 text-sm font-black text-white transition hover:bg-red-500"
+          >
+            Watch Episodes
+          </a>
+          <a
+            href="/suggest-a-wrap"
+            className="rounded-md border border-white/15 bg-white/5 px-4 py-2 text-sm font-black text-stone-100 transition hover:bg-white/10"
+          >
+            Suggest the Next Wrap
+          </a>
+          {socialLinks.map((social) => (
+            <a
+              key={social.href}
+              href={social.href}
+              className="rounded-md border border-white/10 px-3 py-2 text-sm font-bold text-stone-300 transition hover:bg-white/10 hover:text-white"
+            >
+              {social.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
