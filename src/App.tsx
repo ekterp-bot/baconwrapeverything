@@ -22,10 +22,10 @@ const comingSoonPages: Record<string, string> = {
 }
 
 const routeAliases: Record<string, string> = {
-  '/suggest': '/suggest-a-wrap',
+  '/suggest-a-wrap': '/suggest',
   '/creations': '/bacon-index',
-  '/socials': '/contact-sponsor',
-  '/contact': '/contact-sponsor',
+  '/socials': '/contact',
+  '/contact-sponsor': '/contact',
 }
 
 function App() {
@@ -44,10 +44,10 @@ function App() {
 function getPage(pathname: string) {
   if (pathname === '/') return <HomePage />
   if (pathname === '/episodes') return <EpisodesPage />
-  if (pathname === '/suggest-a-wrap') return <SuggestPage />
+  if (pathname === '/suggest') return <SuggestPage />
   if (pathname === '/bacon-index') return <BaconIndexPage />
   if (pathname === '/gear') return <GearPage />
-  if (pathname === '/contact-sponsor') return <ContactSponsorPage />
+  if (pathname === '/contact') return <ContactSponsorPage />
 
   const episodeMatch = pathname.match(/^\/episodes\/([^/]+)$/)
   if (episodeMatch) {

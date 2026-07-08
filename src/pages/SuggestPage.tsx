@@ -10,10 +10,10 @@ export function SuggestPage() {
         <h1 className="mt-2 text-4xl font-black tracking-tight text-white sm:text-6xl">
           Put something questionable in the queue.
         </h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-300">
-          This form is still local-only, but the structure is ready for a future
-          Supabase suggestion table and viewer voting.
-        </p>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-300">
+            This form is still local-only, but the structure is ready for a future
+            suggestion table and viewer voting.
+          </p>
       </section>
       <SuggestionForm />
     </main>

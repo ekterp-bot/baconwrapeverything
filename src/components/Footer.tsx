@@ -2,7 +2,7 @@ import { socialLinks } from '../data/siteData'
 
 const footerLinks = [
   ...socialLinks.map((social) => ({ label: social.name, href: social.href })),
-  { label: 'Contact/Sponsor', href: '/contact-sponsor' },
+  { label: 'Contact/Sponsor', href: '/contact' },
 ]
 
 export function Footer() {
@@ -11,7 +11,9 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <div>
           <p className="text-lg font-black text-white">BaconWrapEverything</p>
-          <p className="text-sm text-stone-500">BaconWrapEverything.com placeholder</p>
+          <p className="text-sm text-stone-500">
+            If it can be wrapped, it will be. BaconWrapEverything.com
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
           {footerLinks.map((link) => (

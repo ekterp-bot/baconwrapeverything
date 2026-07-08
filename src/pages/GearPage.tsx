@@ -11,8 +11,8 @@ export function GearPage() {
           The tools behind the questionable decisions.
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-300">
-          Affiliate links are coming later. For launch, this is a sponsor-safe
-          placeholder for the actual setup.
+          Affiliate links coming soon. For launch, this is an honest look at the
+          categories we will document as the show setup gets locked in.
         </p>
       </section>
       <GearSection />

@@ -54,7 +54,7 @@ export function HomePage() {
             </p>
           </div>
           <a
-            href="/suggest-a-wrap"
+            href="/suggest"
             className="rounded-md bg-red-600 px-6 py-3.5 text-center text-base font-black uppercase tracking-wide text-white transition hover:bg-red-500"
           >
             Suggest the Next Wrap
@@ -93,7 +93,7 @@ function HomeCtaStrip() {
             Watch Episodes
           </a>
           <a
-            href="/suggest-a-wrap"
+            href="/suggest"
             className="rounded-md border border-white/15 bg-white/5 px-4 py-2 text-sm font-black text-stone-100 transition hover:bg-white/10"
           >
             Suggest the Next Wrap
@@ -104,7 +104,7 @@ function HomeCtaStrip() {
               href={social.href}
               className="rounded-md border border-white/10 px-3 py-2 text-sm font-bold text-stone-300 transition hover:bg-white/10 hover:text-white"
             >
-              {social.name}
+              {social.cta}
             </a>
           ))}
         </div>

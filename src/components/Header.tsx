@@ -1,9 +1,9 @@
 const navItems = [
   { label: 'Episodes', href: '/episodes' },
-  { label: 'Suggest', href: '/suggest-a-wrap' },
+  { label: 'Suggest', href: '/suggest' },
   { label: 'Bacon Index', href: '/bacon-index' },
   { label: 'Gear', href: '/gear' },
-  { label: 'Contact', href: '/contact-sponsor' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export function Header() {
@@ -32,6 +32,17 @@ export function Header() {
           ))}
         </div>
       </nav>
+      <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 sm:hidden">
+        {navItems.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="shrink-0 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm font-bold text-stone-200"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
     </header>
   )
 }

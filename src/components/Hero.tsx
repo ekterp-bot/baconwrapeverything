@@ -19,10 +19,10 @@ export function Hero() {
               href="/episodes"
               className="rounded-md bg-red-600 px-6 py-3.5 text-center text-base font-black uppercase tracking-wide text-white shadow-lg shadow-red-950/40 transition hover:bg-red-500"
             >
-              Watch Latest
+              Watch Episodes
             </a>
             <a
-              href="/suggest-a-wrap"
+              href="/suggest"
               className="rounded-md border border-white/20 bg-white/10 px-6 py-3.5 text-center text-base font-black uppercase tracking-wide text-white transition hover:bg-white/15"
             >
               Suggest the Next Wrap

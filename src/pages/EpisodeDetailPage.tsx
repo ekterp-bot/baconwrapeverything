@@ -64,7 +64,7 @@ export function EpisodeDetailPage({ episode }: EpisodeDetailPageProps) {
             </h2>
           </div>
           <a
-            href="/suggest-a-wrap"
+            href="/suggest"
             className="rounded-md bg-red-600 px-6 py-3.5 text-center text-base font-black uppercase tracking-wide text-white transition hover:bg-red-500"
           >
             Suggest the Next Wrap

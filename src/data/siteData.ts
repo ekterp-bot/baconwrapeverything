@@ -4,18 +4,21 @@ export const socialLinks = [
     href: '/tiktok',
     handle: '@baconwrapeverything',
     note: 'Short-form chaos headquarters.',
+    cta: 'Follow on TikTok',
   },
   {
     name: 'YouTube',
     href: '/youtube',
     handle: 'BaconWrapEverything',
     note: 'Full cuts, compilations, and future playlists.',
+    cta: 'Subscribe on YouTube',
   },
   {
     name: 'Instagram',
     href: '/instagram',
     handle: '@baconwrapeverything',
     note: 'Wrap reveals, polls, and behind-the-counter nonsense.',
+    cta: 'Follow on Instagram',
   },
 ]
 
