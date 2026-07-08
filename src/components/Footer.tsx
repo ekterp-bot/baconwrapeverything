@@ -1,7 +1,6 @@
-import { socialLinks } from '../data/siteData'
+import { SocialLinkButtons } from './SocialLinkButtons'
 
 const footerLinks = [
-  ...socialLinks.map((social) => ({ label: social.name, href: social.href })),
   { label: 'Contact/Sponsor', href: '/contact' },
 ]
 
@@ -15,16 +14,19 @@ export function Footer() {
             If it can be wrapped, it will be. BaconWrapEverything.com
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {footerLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="rounded-md border border-white/10 px-3 py-2 text-sm font-bold text-stone-300 transition hover:bg-white/10 hover:text-white"
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="grid gap-3">
+          <SocialLinkButtons compact />
+          <div className="flex flex-wrap gap-2 lg:justify-end">
+            {footerLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-md border border-white/10 px-3 py-2 text-sm font-bold text-stone-300 transition hover:bg-white/10 hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

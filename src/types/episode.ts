@@ -1,5 +1,7 @@
 export type EpisodeStatus = 'Hall of Fame' | 'Solid Wrap' | 'Disaster' | 'Pending'
 export type WrapAgain = 'Absolutely' | 'Maybe' | 'Nope' | 'TBD'
+export type VideoPlatform = 'tiktok' | 'instagram' | 'youtube'
+export type EpisodeVideoLinks = Partial<Record<VideoPlatform, string>>
 
 export type Episode = {
   id: string
@@ -18,6 +20,7 @@ export type Episode = {
   wrapAgain: WrapAgain
   notes: string
   verdict: string
+  videoLinks: EpisodeVideoLinks
   videoUrl: string
   thumbnailUrl: string
 }

@@ -1,4 +1,5 @@
 import { EpisodeCard } from '../components/EpisodeCard'
+import { EpisodeVideoLinks } from '../components/EpisodeVideoLinks'
 import { episodes } from '../data/episodes'
 import type { Episode } from '../types/episode'
 
@@ -37,8 +38,11 @@ export function EpisodeDetailPage({ episode }: EpisodeDetailPageProps) {
           <div className="rounded-lg border border-white/10 bg-stone-950 p-4">
             <div className="grid aspect-video place-items-center rounded-md bg-[repeating-linear-gradient(135deg,#7f1d1d_0,#7f1d1d_16px,#fef3c7_16px,#fef3c7_22px,#1c1917_22px,#1c1917_42px)]">
               <span className="rounded-md bg-black/70 px-3 py-2 text-xs font-black uppercase tracking-[0.18em] text-white">
-                Video Embed Coming Soon
+                {Object.keys(episode.videoLinks).length > 0 ? 'Public Watch Link Ready' : 'Video Embed Coming Soon'}
               </span>
+            </div>
+            <div className="mt-4">
+              <EpisodeVideoLinks links={episode.videoLinks} />
             </div>
           </div>
         </div>

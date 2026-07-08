@@ -39,6 +39,9 @@ export function SocialsSection({ standalone = false }: SocialsSectionProps) {
               </p>
               <a
                 href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.label}
                 className="mt-5 block rounded-md border border-white/15 bg-white/5 px-3 py-2 text-center text-sm font-black text-stone-200 transition hover:bg-white/10 hover:text-white"
               >
                 {social.cta}

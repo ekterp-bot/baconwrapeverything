@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BaconWrapEverything</title>
+  <desc id="desc">If it can be wrapped, it will be.</desc>
+  <rect width="1200" height="630" fill="#090706"/>
+  <path d="M0 0h1200v630H0z" fill="url(#pattern)" opacity="0.22"/>
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#120c0a" stroke="#3f1d1a" stroke-width="3"/>
+  <path d="M82 502C208 424 266 263 398 204c154-69 255 98 405 31 117-52 157-154 315-162" fill="none" stroke="#b91c1c" stroke-width="42" stroke-linecap="round"/>
+  <path d="M82 502C208 424 266 263 398 204c154-69 255 98 405 31 117-52 157-154 315-162" fill="none" stroke="#fff7ed" stroke-width="14" stroke-linecap="round" opacity="0.92"/>
+  <text x="98" y="175" fill="#fecaca" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900" letter-spacing="6">IF IT CAN BE WRAPPED, IT WILL BE.</text>
+  <text x="96" y="305" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="86" font-weight="900">BaconWrapEverything</text>
+  <text x="102" y="390" fill="#f5f5f4" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Chaotic food tests. Air fried. Bacon wrapped.</text>
+  <rect x="98" y="440" width="330" height="74" rx="12" fill="#ef000c"/>
+  <text x="132" y="488" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="28" font-weight="900">WATCH THE WRAP</text>
+  <defs>
+    <pattern id="pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 0h14L0 14z" fill="#ffffff"/>
+    </pattern>
+  </defs>
+</svg>

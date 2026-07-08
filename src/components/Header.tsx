@@ -1,3 +1,5 @@
+import { SocialLinkButtons } from './SocialLinkButtons'
+
 const navItems = [
   { label: 'Episodes', href: '/episodes' },
   { label: 'Suggest', href: '/suggest' },
@@ -30,6 +32,9 @@ export function Header() {
               {item.label}
             </a>
           ))}
+        </div>
+        <div className="hidden xl:block">
+          <SocialLinkButtons compact />
         </div>
       </nav>
       <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 sm:hidden">

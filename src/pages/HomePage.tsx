@@ -4,8 +4,9 @@ import { GearSection } from '../components/GearSection'
 import { Hero } from '../components/Hero'
 import { Leaderboard } from '../components/Leaderboard'
 import { SocialsSection } from '../components/SocialsSection'
+import { SocialLinkButtons } from '../components/SocialLinkButtons'
 import { episodes } from '../data/episodes'
-import { socialLinks, viewerSuggestions } from '../data/siteData'
+import { viewerSuggestions } from '../data/siteData'
 
 export function HomePage() {
   const latestEpisodes = episodes.slice(0, 4)
@@ -98,15 +99,7 @@ function HomeCtaStrip() {
           >
             Suggest the Next Wrap
           </a>
-          {socialLinks.map((social) => (
-            <a
-              key={social.href}
-              href={social.href}
-              className="rounded-md border border-white/10 px-3 py-2 text-sm font-bold text-stone-300 transition hover:bg-white/10 hover:text-white"
-            >
-              {social.cta}
-            </a>
-          ))}
+          <SocialLinkButtons compact />
         </div>
       </div>
     </section>

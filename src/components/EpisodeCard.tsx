@@ -1,4 +1,5 @@
 import type { Episode, EpisodeStatus } from '../types/episode'
+import { EpisodeVideoLinks } from './EpisodeVideoLinks'
 
 const statusClasses: Record<EpisodeStatus, string> = {
   'Hall of Fame': 'bg-yellow-300 text-black',
@@ -62,6 +63,9 @@ export function EpisodeCard({ episode }: EpisodeCardProps) {
           <p className="rounded-md bg-white/5 px-3 py-2 text-sm font-black text-red-100">
             Verdict: {episode.rating === null ? 'Pending taste test' : `${episode.rating.toFixed(1)} / 10`}
           </p>
+          <div className="mt-3">
+            <EpisodeVideoLinks links={episode.videoLinks} compact />
+          </div>
           <a
             href={`/episodes/${episode.id}`}
             className="mt-3 block rounded-md border border-white/15 bg-white/5 px-3 py-2 text-center text-sm font-black text-stone-200 transition hover:bg-white/10 hover:text-white"
